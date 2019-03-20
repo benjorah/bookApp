@@ -55,6 +55,19 @@
     }
 
 
+    &__password-control{
+
+        position: absolute;
+        right: 1rem;
+        bottom: 50%;
+        transform: translateY(50%);
+
+    }
+
+    &__password-group{
+        position: relative;
+
+    }
 
     &__label{
         text-transform: uppercase;
@@ -93,9 +106,14 @@
 
         padding-bottom: 3px;
         border-radius: 8px;
-        background: linear-gradient(179.24deg, #BAFB67 -5.37%, #00D23A 196.64%);
+        background:none;
+        transition: all  1s ease-in;
         &--error{
-            background: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);;
+            background: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);
+        }
+
+        &--focus{
+            background: linear-gradient(179.24deg, #BAFB67 -5.37%, #00D23A 196.64%);
         }
     }
 

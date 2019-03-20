@@ -28,16 +28,26 @@
           <div class="form__group">
             <label class="form__label text--upper text--small" for="email">Email</label>
 
-            <div class="form__input-wrapper">
-              <input type="email" name="email" class="form__input">
+            <div 
+            [ngClass]="{
+                'form__input-wrapper--focus': emailFocused || email.length>0
+            }"
+            class="form__input-wrapper">
+              <input #emailVar="ngModel" (blur)="left(emailVar)" (focus)="focusChanged(emailVar)" [(ngModel)]="email" type="email" name="email" class="form__input">
             </div>
           </div>
       
           <div class="form__group">
             <label class="form__label text--upper text--small" for="password">Password</label>
 
-            <div class="form__input-wrapper">
-                <input type="password" name="password" class="form__input">
+            <div 
+            [ngClass]="{
+                'form__input-wrapper--focus': passwordFocused || password.length>0
+            }"
+            class="form__input-wrapper form__password-group">
+                <input #passwordVar="ngModel" (blur)="left(passwordVar)" (focus)="focusChanged(passwordVar)" (input)="comparePassword(passwordVar)" [(ngModel)]="password" type="{{passwordType}}" name="password" class="form__input">
+              <img (click)="togglepassword(passwordVar)" src="./assets/img/password_blocker.svg" alt="" class="form__password-control">
+
             </div>
             
           </div>
@@ -45,8 +55,15 @@
       
           <div class="form__group">
             <label class="form__label text--upper text--small" for="password2">Type password again</label>
-            <div class="form__input-wrapper form__input-wrapper--error">
-                <input type="password" name="password2" class="form__input">
+            <div 
+            [ngClass]="{
+                'form__input-wrapper--error':passwordMismatch,
+                'form__input-wrapper--focus':!passwordMismatch && password.length>0
+            }"
+            class="form__input-wrapper form__password-group">
+                <input #passwordCheckVar="ngModel" (input)="comparePassword()" [(ngModel)]="passwordCheck" type="{{passwordCheckType}}" name="password2" class="form__input">
+              <img (click)="togglepassword(passwordCheckVar)" src="./assets/img/password_blocker.svg" alt="" class="form__password-control">
+
             </div>
           </div>
       
