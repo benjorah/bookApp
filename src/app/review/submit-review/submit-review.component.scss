@@ -1,0 +1,56 @@
+.main{
+    min-height: 100vh;
+    padding: 15% 8%;
+    padding-bottom: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-submitted{
+    margin-bottom: 10.7rem;
+    &__image-container{
+        text-align: center;
+        margin-bottom: 3.1rem;
+
+    }
+
+    &__image{
+        width: 13.6rem;
+    }
+
+    &__header{
+        margin-bottom: 1.2rem;
+    }
+
+
+    &__body{
+        margin-bottom: 2.7rem;
+    }
+}
+
+.recommendation{
+    // position: absolute;
+    // bottom: 8rem;
+    // left: 8%;
+    // right: 8%;
+
+
+    &__heading{
+        margin-bottom: 1.8rem;
+    }
+
+    &__books{
+
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+
+        &>*{
+            width: 30%;
+            margin-right: 2rem;
+        }
+
+    }
+}

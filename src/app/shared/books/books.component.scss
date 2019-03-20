@@ -1,0 +1,77 @@
+@import "../../../assets/sass/abstract/variables";
+.book{
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+
+    &--review{
+        align-items: center;
+        background: transparent;
+        padding: 0rem;
+
+    }
+
+    &--recommendation{
+        flex-direction: column;
+        background: transparent;
+        align-items: center;
+        padding: 0rem;
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 3.1rem;
+        &>*{
+            display: block;
+        }
+    }
+
+    &__texts{
+
+        &>*{
+            display: block;
+        }
+
+    }
+
+    &__title{
+        margin-bottom: .5rem;
+    }
+
+    &__ratings-short{
+        margin-top:1.5rem;
+        margin-bottom: .25rem;
+    }
+
+    &__ratings{
+
+
+        &>*{
+            margin-right: .5rem;
+        }
+
+        
+
+        // position:absolute;
+        // bottom :0;
+
+    }
+
+
+    &__star{
+
+        color:rgba(56, 79, 125, 0.65);
+
+        &--on{
+
+            color:$color-gold;
+
+
+        }
+
+    }
+}

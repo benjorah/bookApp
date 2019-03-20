@@ -1,0 +1,67 @@
+@import "../../../assets/sass/abstract/variables";
+
+.main{
+    max-height: 90vh;
+    height: 90vh;
+    position: relative;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+}
+
+.review{
+    padding: 15% 10%;
+    padding-bottom: 3.3rem;
+    padding-top: 35rem;
+
+    &__poster{
+        position: fixed;
+        top: 15%;
+        left:10%;
+        right: 10%;
+    }
+
+
+
+  
+
+    &__next-button{
+        position: fixed;
+        bottom: 10rem;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    &__synopsis-link{
+        margin-top: 1.5rem;
+    }
+
+    &__divider{
+        border: 1px solid rgba(56, 79, 125, 0.1);
+        margin-bottom: 4.2rem
+    }
+}
+
+
+.book{
+    &__ratings{
+        margin-top: .9rem;
+        &>*{
+            margin-right:1rem;
+        }
+    }
+    &__star{
+
+        color:rgba(56, 79, 125, 0.65);
+
+        &--on{
+
+            color:$color-gold;
+
+
+        }
+
+    }
+}

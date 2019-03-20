@@ -24,7 +24,13 @@ const routes: Routes = [
       {
         path:'books',
         loadChildren:'./books/books.module#BooksModule'
-      }
+      },
+
+      {
+        path:'review',
+        loadChildren:'./review/review.module#ReviewModule'
+      },
+
   ]
     
       },

@@ -1,0 +1,73 @@
+<div 
+[ngClass]="{
+  'book--review': style=='review',
+  'book--recommendation': style=='recommendation'
+}"
+class="book">
+
+  <div class="book__image">
+    <img [src]="book.imgUrl" alt="">
+  </div>
+
+  <div
+   [ngStyle]="{
+     'margin-left':style=='recommendation'?'0rem':'3rem'
+   }"
+  class="book__content">
+    <div class="book__texts">
+        <span 
+        [ngClass]="{
+          'text--small': style=='recommendation',
+          'utils--center-text': style=='recommendation',
+          'text--mid': style!='recommendation'
+        }"
+        class="book__title text text--dark">{{book.title}}</span>
+        <span 
+        [ngClass]="{
+          'text--tiny': style=='recommendation',
+          'utils--center-text': style=='recommendation',
+          'text--semi--normal': style!='recommendation'
+        }"
+        class="book__author text text--light">{{book.author}}</span>
+
+    </div>
+    
+    <div 
+    *ngIf="!style"
+    class="book__ratings">
+        <i 
+        [ngClass]="{'book__star--on': book.rating>0}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>1}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>2}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>3}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>4}"
+        class="book__star fas fa-star"></i>
+       
+    </div>
+
+    <p 
+    *ngIf="style=='review'"
+    class="book__ratings-short text--deep text--small">
+
+    <i 
+        class="book__star fas fa-star  text--tiny"></i> {{book.rating}}
+      
+  </p>
+  <span *ngIf="style=='review'" class="book__reviews text--tiny text--light">{{'2,464'}} reviews</span>
+
+
+  </div>
+
+</div>

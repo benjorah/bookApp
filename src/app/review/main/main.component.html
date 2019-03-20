@@ -1,0 +1,58 @@
+<div class="main">
+
+    <app-header title="Add Book Review" class="header">
+    </app-header>
+
+   
+    <div class="review">
+
+        <div class="review__poster">
+            <app-books 
+            [book]="book"
+            [style]="'review'"
+            ></app-books>
+        </div>
+
+        <p class="review__text text--semi--normal text--light">
+          {{book.review}}
+        </p>
+
+        <div class="review__synopsis-link utils--left-text">
+          <a class="text text--normal text--deep text--underline"><strong>Full Synopsis</strong></a>
+        </div>
+    </div>
+    <hr class="review__divider"> 
+
+    <p class="text--upper text--small text--light utils--center-text">tap to add rating</p>
+
+    <div 
+    class="book__ratings utils--center-text">
+        <i 
+        [ngClass]="{'book__star--on': book.rating>0}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>1}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>2}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>3}"
+        class="book__star fas fa-star"></i>
+
+        <i 
+        [ngClass]="{'book__star--on': book.rating>4}"
+        class="book__star fas fa-star"></i>
+       
+    </div>
+
+    <div class="review__next-button">
+        <app-button [message]="'next'"></app-button>
+
+    </div>
+
+
+</div>

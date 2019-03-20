@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  books:{}[];
+
+  constructor() {
+    this.books=[
+      {title:"Remote: Office Not Required",author:"Jason Fried",imgUrl:"./assets/img/image4.jpg",rating:2},
+      {title:"Papillon",author:"Henri Charriere",imgUrl:"./assets/img/image5.jpg",rating:4},
+      {title:"The Dark Tower: The Gunslinger",author:"Stephen King",imgUrl:"./assets/img/image6.jpg",rating:1}
+
+    ];
+   }
 
   ngOnInit() {
   }

@@ -1,0 +1,42 @@
+<div class="main">
+
+    <section 
+    class="review-submitted" >
+  
+        <div class="review-submitted__image-container">
+            <img src="./assets/img/check_circled.svg" class="review-submitted__image" alt="">
+      
+        </div>
+      
+        <h3 class="review-submitted__heading text heading-large text text--dark utils--center-text">
+            Thank you!
+        </h3>
+      
+        <p class="review-submitted__body text text--semi--normal text--light utils--center-text">
+            You have submitted your first book review. Now it’s time to make some friends.
+        </p>
+
+        <div class="books__review-button">
+            <app-button [message]="'add friends'"></app-button>
+    
+        </div>
+  
+    </section>
+
+
+    <section class="recommendation">
+
+        <p class="recommendation__heading text--upper text--small text--light utils--center-text">you may also be interested in:</p>
+
+        <ul class="recommendation__books">
+
+            <li *ngFor="let book of books">
+              <app-books [book]="book" [style]="'recommendation'"></app-books>
+            </li>
+      
+
+        </ul>
+
+    </section>
+
+</div>

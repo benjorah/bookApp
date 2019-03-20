@@ -19,5 +19,8 @@
 
 .views{
     position: relative;
+    overflow: scroll;
+    max-height: 100vh;
     z-index: 1;
+    
 }

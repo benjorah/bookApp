@@ -12,6 +12,25 @@
 
       <h2 class=" books__heading text text--upper text--small text--light">Books reviwed by you</h2>
 
+      <ul class="books__list">
+
+        <li *ngFor="let book of books">
+          <app-books [book]="book"></app-books>
+        </li>
+
+       
+
+      </ul>
+
+      
+
+
     </section>
+
+    <div class="books__review-button">
+        <app-button [message]="'add book to review'"></app-button>
+
+    </div>
+
 
 </div>
