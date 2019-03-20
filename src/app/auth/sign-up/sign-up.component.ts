@@ -29,13 +29,12 @@ export class SignUpComponent implements OnInit {
 
   onSubmit(f){
 
-    this.router.navigate(['home']);
+    this.router.navigate(['home/books']);
 
   }
 
 
   comparePassword(r){
-    console.log(r);
     if(this.password!=this.passwordCheck){
       this.passwordMismatch=true;
       return;

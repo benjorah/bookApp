@@ -1,12 +1,23 @@
+@import "../../../assets/sass/abstract/variables";
+@import "../../../assets/sass/abstract/variables";
+
 .main{
     width: 100%;
+    background: $grey_bg
+
 }
 .nav{
     width: 100%;
     overflow: hidden;
+    background: #ffffff;
 }
 
 .header{
     width: 100%;
-    
+
+}
+
+.views{
+    position: relative;
+    z-index: 1;
 }
