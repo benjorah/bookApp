@@ -1,0 +1,71 @@
+@import "../../../assets/sass/abstract/variables";
+
+.main{
+
+    background: $grey_bg_light;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    padding:13% 10%;
+
+
+    &__circle{
+        position: absolute;
+
+        z-index: 0;
+
+        &--blue--lower{
+            width: 5.5rem;
+            height: 5.5rem;
+            right: -5%;
+            top: -3%;
+
+        }
+
+        &--blue--top{
+
+            width: 29rem;
+            height: 29rem;
+            left: -5.7rem;
+            top: -13.9rem;
+            
+        }
+    }
+
+}
+
+
+.auth{
+    position: relative;
+    z-index: 1;
+    &__welcome{
+        margin-bottom: 4rem;
+        &-image-container{
+            text-align: center;
+            margin-bottom: 3.1rem;
+        }
+    
+        &-image{
+            width: 13.6rem;
+        }
+    
+        &-header{
+            margin-bottom: 1.2rem;
+        }
+    
+    }
+
+
+    &__form{
+        position: relative;
+
+        &-button{
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

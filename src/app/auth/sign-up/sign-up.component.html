@@ -1,0 +1,66 @@
+<main class="main">
+    <div class="main__circle main__circle--blue--top circle circle--grad--blue--light"></div>
+
+
+    <div class="auth">
+
+
+        <section class="auth__welcome">
+
+            <div  class="auth__welcome-image-container">
+                <img src="./assets/img/light_bulb.svg" class="auth__welcome-image" alt="">
+      
+            </div>
+      
+              <h3 class="auth__welcome-heading text heading-large text text--dark utils--center-text">
+                  Welcome!
+                </h3>
+              
+                <p class="auth__welcome-body text text--semi--normal text--light utils--center-text">
+                    Create your account to get started. After that, you can share books and make friends.
+                </p>
+          </section>
+      
+      
+          <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="auth__form form form--transparent">
+          <div class="main__circle main__circle--blue--lower circle circle--grad--blue"></div>
+      
+          <div class="form__group">
+            <label class="form__label text--upper text--small" for="email">Email</label>
+
+            <div class="form__input-wrapper">
+              <input type="email" name="email" class="form__input">
+            </div>
+          </div>
+      
+          <div class="form__group">
+            <label class="form__label text--upper text--small" for="password">Password</label>
+
+            <div class="form__input-wrapper">
+                <input type="password" name="password" class="form__input">
+            </div>
+            
+          </div>
+      
+      
+          <div class="form__group">
+            <label class="form__label text--upper text--small" for="password2">Type password again</label>
+            <div class="form__input-wrapper form__input-wrapper--error">
+                <input type="password" name="password2" class="form__input">
+            </div>
+          </div>
+      
+          <button class="form__button auth__form-button form__button--green form__button--wide">sign up</button>
+
+
+          <p class="text text--deep text--normal utils--center-text">Already have an account? <a href="#"><strong>Login</strong></a></p>
+      
+          </form>
+
+    </div>
+
+   
+
+
+
+</main>

@@ -1,0 +1,60 @@
+<div class="slider">
+
+  <section 
+  [ngClass]="{
+    'slider__content--hidden': !showSlide
+  }"
+  class="slider__content" >
+
+      <div class="slider__image-container">
+          <img [src]="currentSlide.imageUrl" class="slider__image" alt="">
+    
+      </div>
+    
+      <h3 class="slider__heading text heading-large text text--dark utils--center-text">
+        {{currentSlide.header}}
+      </h3>
+    
+      <p class="slider__body text text--semi--normal text--light utils--center-text">
+        {{currentSlide.bodyText}}
+      </p>
+
+  </section>
+
+
+  <section class="slider__control">
+
+    <div class="slider__nav">
+
+        <div class="slider__points">
+
+          <div 
+          *ngFor="let slide of slides; let i=index" 
+          class="slider__point circle circle--green circle--green--light"
+          [ngClass]="{'slider__point--current':currentIndex==i}"
+          ></div>
+
+
+        </div>
+    
+        <div class="slider__forward-container" (click)="moveForward()">
+              <img src="./assets/img/right_arrow_circled.svg" class="slider__forward" alt="">
+        
+          </div>
+
+          
+
+    </div>
+
+
+    <div class="slider__skip utils--center-text">
+      <a (click)="skipSlide()" class="text text--normal text--deep text--underline">Skip Intro</a>
+    </div>
+
+    
+
+
+  </section>
+  
+
+</div>

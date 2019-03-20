@@ -1,0 +1,51 @@
+@import "../../../assets/sass/base/animations";
+.slider{
+    &__image-container{
+        text-align: center;
+    }
+
+    &__image{
+        width: 20rem;
+        margin-bottom: 3.1rem;
+    }
+
+    &__header{
+        margin-bottom: 1.2rem;
+    }
+
+    &__content{
+        opacity: 1;
+        transform: scale(1);
+        animation: enterFade .6s ease-out .0s 1 normal forwards;
+        margin-bottom: 11.5rem;
+        &--hidden{
+        
+            animation: leaveFade .6s ease-out 0s 1 normal forwards;
+        }
+    }
+
+    &__forward{
+        width:4.8rem;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4.1rem;
+    }
+
+    &__points{
+
+    }
+
+    &__point{
+         width: 1.2rem;
+         height: 1.2rem;
+         margin-right: 0.7rem;
+
+         &--current{
+             opacity: 1;
+         }
+    }
+}

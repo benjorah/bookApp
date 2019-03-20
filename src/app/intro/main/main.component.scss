@@ -1,0 +1,57 @@
+@import "../../../assets/sass/abstract/variables";
+
+.main{
+
+    background: $grey_bg_light;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+
+
+    &__circle{
+        position: absolute;
+
+        z-index: 0;
+        &--orange{
+            width: 7.5rem;
+            height: 7.5rem;
+            left: -5.6%;
+            top: 4.93%;
+
+        }
+
+        &--blue{
+            width: 7.3rem;
+            height: 7.3rem;
+            right: 9.41%;
+            top: 20.42%;
+
+        }
+
+        &--blue--bottom{
+
+            width: 27.1rem;
+            height: 27.1rem;
+            left: -15.17%;
+            bottom: -20.69%;
+            transform: rotate(-15.82deg);
+            
+        }
+    }
+
+}
+
+.intro{
+    &__slider{
+         
+    }
+
+    &__content{
+
+        padding: 13% 10%;
+    }
+}

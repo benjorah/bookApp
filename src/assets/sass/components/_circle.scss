@@ -1,0 +1,38 @@
+.circle{
+    border-radius: 100%;
+    display: inline-block;
+    
+    &--grad{
+
+        &--orange{
+            background: linear-gradient(147.47deg, #FEB665 24.48%, #F66EB4 118.65%);
+            &--light{
+                background: linear-gradient(141.64deg, #FFF17C -3.59%, #FF8B8E 118.04%);
+            }
+
+        }
+
+        &--blue{
+            background: linear-gradient(228.76deg, #2DEEF9 -34.42%, #E084F1 127.18%);
+
+            &--light{
+                background: linear-gradient(315deg, rgba(255, 255, 255, 0.61) 3.5%, rgba(121, 171, 252, 0.61) 93.61%, rgba(96, 108, 255, 0.61) 147.83%);
+            }
+
+            &--translucent{
+                background: linear-gradient(228.76deg, rgba(45, 238, 249, 0.15) -34.42%, rgba(224, 132, 241, 0.15) 127.18%);
+            }
+        }
+
+        
+    }
+
+    &--green{
+        background: #8EF15C;
+
+        &--light{
+            opacity: 0.25;
+
+        }
+    }
+}

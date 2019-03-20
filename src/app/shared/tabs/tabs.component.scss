@@ -1,0 +1,94 @@
+@import "../../../assets/sass/abstract/variables";
+
+.tabs{
+    position: absolute;
+    width: auto;
+    right: 0;
+    left: 0;
+    top: initial;
+    bottom: 0;
+    z-index: 20;
+    box-shadow:1rem .7rem 5rem 0rem rgba(#000000,.2);
+
+
+    @media only screen and (max-width: 1200px) {
+        
+
+        // background: #161616;
+        // width: 23%;
+        // position: fixed;
+        // left:0;
+        // top:0;
+        // bottom:0;
+        // padding-top:10rem;
+
+      }
+
+
+    &__icon{
+        width:100%;
+
+        
+    
+    }
+
+    &__list{
+        display: flex !important;
+        justify-content: space-between;
+        margin-bottom: 0rem !important;
+        width: 100%;
+
+        &>*{
+            flex: 1
+            
+        }
+        @media only screen and (max-width: 1200px) {
+           
+          }
+    }
+
+    &__icon-container{
+
+        margin-right: 0rem;
+        display: inline-block;
+        margin-bottom: .5rem;
+
+        
+    }
+
+    &__item-text{
+        // color: $color-grey;
+        display: block;
+
+      
+    }
+
+    &__item{
+        text-align: center;
+        list-style: none;
+
+
+
+        &>a{
+            display: block;
+            width: 100%;
+            padding:1rem 6rem; 
+
+            @media only screen and (max-width: 1200px) {
+               
+                width: initial;
+                padding-left: initial; 
+                padding-right: initial; 
+        
+              }
+
+        }
+
+
+        &:hover,& >.active{
+        color: #384F7D !important;
+        cursor: pointer;
+        }
+        
+    }
+}

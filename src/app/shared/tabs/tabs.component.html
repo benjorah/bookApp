@@ -1,0 +1,13 @@
+<div class="tabs">
+    <ul class="tabs__list">
+      <li class="tabs__item " *ngFor="let item of navItemsObj;let i=index" 
+      >
+        <a [ngClass]="{'active':i==1}" (click)="itemClicked(item)">
+          <div class="tabs__icon-container">
+            <img [src]="item.img" alt="" class="tabs__icon">
+          </div>
+          <span [ngClass]="{'text--light':i!=1}" class="tabs__item-text text--light text--tiny">{{item.name}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>

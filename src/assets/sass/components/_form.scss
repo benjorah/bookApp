@@ -1,0 +1,159 @@
+.form{
+    // padding: 3.1rem 3.8rem;
+    min-width: 0%;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+   position: relative;
+    border-radius: 8px;
+
+
+    &--trasnparent{
+        background: transparent;
+    }
+  
+
+
+    &__row{
+
+        display: flex;
+
+        .form__group:first-child{
+
+            margin-right: 4rem;
+        }
+
+    }
+
+    
+
+    &__input{
+
+        padding: 1.5rem 2rem;
+        background: $color-white;
+        background-image: none;
+        border: none;
+        width: 100%;
+        position: relative;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow:0rem .5rem .7rem .1rem rgba(#000000,.2);
+
+
+        // border-radius: 8px;
+
+
+        &:focus + .form__label--float{
+            // color: $color-body-text;
+        }
+
+
+    
+        
+    }
+
+
+
+    &__label{
+        text-transform: uppercase;
+        margin-bottom: .6rem;
+        color: rgba(68, 89, 132, 0.3);
+    
+
+    }
+
+
+    &__input:not(:placeholder-shown) + &__label {
+
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(-6.5rem);
+    
+    }
+
+
+
+    &__group>*{
+        display: block;
+        margin-bottom:1rem;
+
+        width: 100%;
+    }
+
+    &__group{
+
+        width: 100%;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__input-wrapper{
+
+        padding-bottom: 3px;
+        border-radius: 8px;
+        background: linear-gradient(179.24deg, #BAFB67 -5.37%, #00D23A 196.64%);
+        &--error{
+            background: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);;
+        }
+    }
+
+
+
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &>*{
+            flex:2;
+        }
+
+       
+       
+    }
+
+
+
+    &__button{
+        border-radius: 8px;
+        text-transform: uppercase;
+        padding: 2rem 4rem;
+        background-image: none;
+        border: none;
+        color: #ffffff;
+        box-shadow:0rem 0rem .5rem .1rem rgba(#000000,.2);
+
+
+        &--green{
+            background: linear-gradient(166.04deg, #BAFB67 -5.37%, #00D23A 196.64%);
+        }
+        &--wide{
+            width: 100%;
+        }
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+// .border-
+
+// border: 1.5px solid $color-olive-black;
