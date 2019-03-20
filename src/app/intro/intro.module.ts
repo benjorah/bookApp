@@ -12,6 +12,6 @@ import { SliderComponent } from '../slide/slider/slider.component';
     IntroRoutingModule,
     SlideModule
   ],
-  declarations: [MainComponent,SliderComponent],
+  declarations: [MainComponent],
 })
 export class IntroModule { }

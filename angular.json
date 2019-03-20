@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "../node_modules/circular-std/dist/index.css"
+              "node_modules/circular-std/dist/index.css"
             ],
             "scripts": []
           },
