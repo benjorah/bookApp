@@ -6,13 +6,15 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
 import { BooksComponent } from './books/books.component';
 import { ButtonComponent } from './button/button.component';
+import { FilterPipe } from './pipes/filter.pipe';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule
   ],
-  declarations: [TabsComponent, HeaderComponent, SearchBarComponent, BooksComponent, ButtonComponent],
-  exports:[TabsComponent,HeaderComponent,SearchBarComponent,BooksComponent,ButtonComponent]
+  declarations: [TabsComponent, HeaderComponent, SearchBarComponent, BooksComponent, ButtonComponent,FilterPipe],
+  exports:[TabsComponent,HeaderComponent,SearchBarComponent,BooksComponent,ButtonComponent,FilterPipe]
 })
 export class SharedModule { }

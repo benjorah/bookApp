@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import {FilterPipe} from '../../shared/pipes/filter.pipe'
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class MainComponent implements OnInit {
 
   books:{}[];
+  searchText;
 
   constructor(private router:Router) {
     this.books=[
@@ -25,6 +26,13 @@ export class MainComponent implements OnInit {
 
   writeReview(){
     this.router.navigate(['home/review']);
+  }
+
+
+  searchTextChanged(event){
+
+    this.searchText=event['text'];
+
   }
 
 }

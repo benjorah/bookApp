@@ -1,7 +1,7 @@
 <div class="form__group">
     <div 
     class="form__input-wrapper form__input-group">
-        <input #bookVar="ngModel" (input)="searchBook(bookVar)" [(ngModel)]="bookName" type="text" name="books" class="form__input">
+        <input (input)="textChanged()" [(ngModel)]="searchText" type="text" name="books" class="form__input">
       <img src="./assets/img/search_icon.svg" alt="" class="form__input-icon form__input-icon--left">
 
     </div>
