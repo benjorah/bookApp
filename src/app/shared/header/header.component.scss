@@ -3,13 +3,46 @@
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
+
+
+    // @media only screen and (min-width: 450px) {
+       
+    //     transform: translateY(-20%);
+    // }
+
+    // @media only screen and (min-width: 540px) {
+       
+    //     transform: translateY(-23%);
+    // }
+
+
+    // @media only screen and (min-width: 600px) {
+       
+    //     transform: translateY(-30%);
+    // }
+
+    // @media only screen and (min-width: 700px) {
+       
+    //     transform: translateY(-70%);
+    // }
 }
 
-.title{
-    position: absolute;
-    bottom: 40%;
-    left:50%;
-    font-weight: normal;
-    transform: translateX(-50%);
-    color: #ffffff;
+
+
+
+.header{
+    &__background{
+        width: 100%;
+
+    }
+
+    &__title{
+        position: absolute;
+        bottom: 40%;
+        left:50%;
+        font-weight: normal;
+        transform: translateX(-50%);
+        color: #ffffff;
+    }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-submit-review',
@@ -9,7 +10,7 @@ export class SubmitReviewComponent implements OnInit {
 
   books:{}[];
 
-  constructor() {
+  constructor(private router:Router) {
     this.books=[
       {title:"Scar Tissue",author:"Anthony Kiedis",imgUrl:"./assets/img/image1.jpg"},
       {title:"Eat Awesome",author:"Paul Jarvis ",imgUrl:"./assets/img/image2.jpg"},
@@ -19,6 +20,11 @@ export class SubmitReviewComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+
+  addFriends(){
+    this.router.navigate(['home/books']);
   }
 
 }

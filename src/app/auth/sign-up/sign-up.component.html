@@ -44,9 +44,9 @@
             [ngClass]="{
                 'form__input-wrapper--focus': passwordFocused || password.length>0
             }"
-            class="form__input-wrapper form__password-group">
+            class="form__input-wrapper form__input-group">
                 <input #passwordVar="ngModel" (blur)="left(passwordVar)" (focus)="focusChanged(passwordVar)" (input)="comparePassword(passwordVar)" [(ngModel)]="password" type="{{passwordType}}" name="password" class="form__input">
-              <img (click)="togglepassword(passwordVar)" src="./assets/img/password_blocker.svg" alt="" class="form__password-control">
+              <img (click)="togglepassword(passwordVar)" src="./assets/img/password_blocker.svg" alt="" class="form__input-icon">
 
             </div>
             
@@ -60,9 +60,9 @@
                 'form__input-wrapper--error':passwordMismatch,
                 'form__input-wrapper--focus':!passwordMismatch && password.length>0
             }"
-            class="form__input-wrapper form__password-group">
+            class="form__input-wrapper form__input-group">
                 <input #passwordCheckVar="ngModel" (input)="comparePassword()" [(ngModel)]="passwordCheck" type="{{passwordCheckType}}" name="password2" class="form__input">
-              <img (click)="togglepassword(passwordCheckVar)" src="./assets/img/password_blocker.svg" alt="" class="form__password-control">
+              <img (click)="togglepassword(passwordCheckVar)" src="./assets/img/password_blocker.svg" alt="" class="form__input-icon">
 
             </div>
           </div>

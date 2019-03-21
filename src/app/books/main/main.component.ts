@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +10,7 @@ export class MainComponent implements OnInit {
 
   books:{}[];
 
-  constructor() {
+  constructor(private router:Router) {
     this.books=[
       {title:"Remote: Office Not Required",author:"Jason Fried",imgUrl:"./assets/img/image4.jpg",rating:2},
       {title:"Papillon",author:"Henri Charriere",imgUrl:"./assets/img/image5.jpg",rating:4},
@@ -19,6 +20,11 @@ export class MainComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+
+  writeReview(){
+    this.router.navigate(['home/review']);
   }
 
 }

@@ -28,7 +28,7 @@
     </section>
 
     <div class="books__review-button">
-        <app-button [message]="'add book to review'"></app-button>
+        <app-button (clicked)="writeReview()" [message]="'add book to review'"></app-button>
 
     </div>
 

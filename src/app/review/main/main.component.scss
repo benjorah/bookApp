@@ -1,13 +1,14 @@
 @import "../../../assets/sass/abstract/variables";
 
 .main{
-    max-height: 90vh;
-    height: 90vh;
+    // max-height: 90vh;
+    // height: 90vh;
     position: relative;
+    padding-bottom: 20rem;
 }
 
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
 }
 
@@ -15,9 +16,10 @@
     padding: 15% 10%;
     padding-bottom: 3.3rem;
     padding-top: 35rem;
+    overflow: hidden;
 
     &__poster{
-        position: fixed;
+        position: absolute;
         top: 15%;
         left:10%;
         right: 10%;
@@ -28,10 +30,16 @@
   
 
     &__next-button{
-        position: fixed;
-        bottom: 10rem;
+        margin-top: 5rem;
         width: 100%;
         padding: 0 10%;
+
+        @media only screen and (min-width: 700px) {
+            position: relative;
+            width: 60%;
+            left:50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__synopsis-link{

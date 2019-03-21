@@ -16,8 +16,8 @@
             You have submitted your first book review. Now it’s time to make some friends.
         </p>
 
-        <div class="books__review-button">
-            <app-button [message]="'add friends'"></app-button>
+        <div class="addFriendsButton">
+            <app-button  (clicked)="addFriends()" [message]="'add friends'"></app-button>
     
         </div>
   
